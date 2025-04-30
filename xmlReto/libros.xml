@@ -1,0 +1,126 @@
+<libros>
+    <libro>
+    <titulo>El gran Gatsby</titulo>
+    <isbn>9780333791035</isbn>
+    </libro>
+
+    <libro>
+    <titulo>Cien años de soledad</titulo>
+    <isbn>9780060114183</isbn>
+    </libro>
+
+    <libro>
+    <titulo>1984</titulo>
+    <isbn>9780151660346</isbn>
+    </libro>
+
+    <libro>
+    <titulo>Orgullo y prejuicio</titulo> 
+    <isbn>9780140430721</isbn>
+    </libro>
+
+    <libro>
+    <titulo>Harry Potter y la piedra filosofal</titulo>
+    <isbn>9788869183157</isbn>
+    </libro>
+
+    <libro>
+    <titulo>Don Quijote de la Mancha</titulo>
+    <isbn>9780744525021</isbn>
+    </libro>
+
+    <libro>
+    <titulo>Los miserables</titulo>
+    <isbn>9786589902089</isbn>
+    </libro>
+
+    <libro>
+    <titulo>Crimen y castigo</titulo>
+    <isbn>9788420741468</isbn>
+    </libro>
+
+    <libro>
+    <titulo>Moby-Dick</titulo>
+    <isbn>9780143124672</isbn>
+    </libro>
+
+    <libro>
+    <titulo>La divina comedia</titulo>
+    <isbn>9780679642695</isbn>
+    </libro>
+
+    <libro>
+    <titulo>En busca del tiempo perdido</titulo>
+    <isbn>9780330375764</isbn>
+    </libro>
+
+    <libro>
+    <titulo>El retrato de Dorian Gray</titulo>
+    <isbn>9789875503229</isbn>
+    </libro>
+
+    <libro>
+    <titulo>Fausto</titulo>
+    <isbn>9780199229680</isbn>
+    </libro>
+
+    <libro>
+    <titulo>Ulises</titulo>
+    <isbn>9780370307374</isbn>
+    </libro>
+
+    <libro>
+    <titulo>Madame Bovary</titulo>
+    <isbn>9780393096088</isbn>
+    </libro>
+
+    <libro>
+    <titulo>La Regenta</titulo>
+    <isbn>9788423916672</isbn>
+    </libro>
+
+    <libro>
+    <titulo>Fortunata y Jacinta</titulo>
+    <isbn>9788437627380</isbn>
+    </libro>
+
+    <libro>
+    <titulo>Marianela</titulo>
+    <isbn>9788420734156</isbn>
+    </libro>
+
+    <libro>
+    <titulo>Pepita Jiménez</titulo>
+    <isbn>9780080179186</isbn>
+    </libro>
+
+    <libro>
+    <titulo>El árbol de la ciencia</titulo>
+    <isbn>9788420634012</isbn>
+    </libro>
+
+    <libro>
+    <titulo>Trafalgar</titulo>
+    <isbn>9788466777117</isbn>
+    </libro>
+
+    <libro>
+    <titulo>Doña Perfecta</titulo>
+    <isbn>9788497933254</isbn>
+    </libro>
+
+    <libro>
+    <titulo>La familia de Pascual Duarte</titulo>
+    <isbn>9788432040054</isbn>
+    </libro>
+
+    <libro>
+    <titulo>Tiempo de silencio</titulo>
+    <isbn>9780231069847</isbn>
+    </libro>
+
+    <libro>
+    <titulo>La colmena</titulo>
+    <isbn>9781934768563</isbn>
+    </libro>
+</libros>
