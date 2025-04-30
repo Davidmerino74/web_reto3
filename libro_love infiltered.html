@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BIBLIOTECA MUSKIZ</title>
+    <link rel="stylesheet" href="libro.css" type="text/css" media="all" />
+    <link rel="icon" href="IMAGENES RETO1/favicon.PNG" />
+  </head>
+  <body>
+    <!-- Cabecera de la web válida para todas las páginas de la bibioteca-->
+    <header>
+      <img
+        class="cabecera"
+        src="IMAGENES RETO1/LogoBiblioteca.PNG"
+        alt="imagen no encontrada"
+        title="Logo Biblioteca Muskiz"
+        height="100"
+      />
+      <h1 class="titulo">BIBLIOTECA DE MUSKIZ</h1>
+      <pre
+        class="horario"
+      >  HORARIO (LUNES-VIERNES): <br>   Mañanas 10:00 - 13:00 <br>   Tardes 16:00 - 19:45</pre>
+      <!-- form para realizar la busqueda dentro de la web -->
+      <form class="search-box">
+        <input
+          class="text"
+          placeholder="Busca por autor, título, género..."
+        /><button type="submit">
+          <img class="img" src="IMAGENES RETO1/lupa.jpg" alt="Buscador" />
+        </button>
+      </form>
+      <!-- distintos botones para ir al index, a la ubicacion de la biblioteca y para registrarse -->
+      <button class="Home">
+        <a href="Index.html" target="" title="Home"
+          ><img src="IMAGENES RETO1/casita.png" alt="" width="40"
+        /></a>
+      </button>
+      <button class="HomeUbi">
+        <a href="Ubicacion.html" target="" title="Ubicacion"
+          ><img src="IMAGENES RETO1/Ubicacion.png" alt="" width="40"
+        /></a>
+      </button>
+      <button class="login">
+        <a href="Login.html" target="" title="login"
+          ><img src="IMAGENES RETO1/LOGIN.png" alt="" width="40"
+        /></a>
+      </button>
+    </header>
+    <!-- cuerpo de la página con cuatro apartados diferenciados, autor, categoria, publicaciones y libros varios -->
+    <br />
+    <!-- Caja contenedora de 3 div autor,categoria y publicaciones -->
+    <div class="contenedor1">
+      <!-- div autor con menu con los distintos autores y en los desplegables sus correspondientes libros  -->
+      <div class="autor">
+        <h1 class="celeste"><u>Imagen:</u></h1>
+        <img
+          class="tamaño"
+          src="IMAGENES RETO1/imagenes_index/contemporanea/love infultered.jpg"
+          alt="img no encontrada"
+          title=""
+        />
+
+        <br />
+      </div>
+      <!-- div categoria con menu con las distintas categorias de los libros y en el desplegable los correspondientes libros -->
+      <div class="categoria">
+        <h1 class="celeste"><u>Sinopsis :</u></h1>
+        <div class="sinopsis">
+          Con el humor y patosismo de El diario de Bridget Jones y el ingenio
+          sarcástico de Sexo en Nueva York, el primer libro de Gigi Vives gira
+          en torno a deslices amorosos y desilusiones románticas basados en
+          hechos reales. Una prosa maravillosa que cuenta historias agridulces y
+          que desvela la realidad del dating en el siglo XXI.<br /><br />
+
+          Una narrativa divertida y original que expone sin contemplaciones esa
+          búsqueda constante y frustrante de la pareja ideal.<br /><br />
+
+          Un vivo retrato de las relaciones románticas de nuestro tiempo.
+          <br /><br />
+        </div>
+
+        <br />
+      </div>
+    </div>
+    <br />
+
+    <!-- pie de página igual en toda la web, con imagenes, copyright y datos de contacto-->
+    <footer>
+      <img
+        class="footer"
+        src="IMAGENES RETO1/Logotipo_del_Gobierno_de_España-01.png"
+        alt="imagen no encontrada"
+        title="Logo Biblioteca Muskiz"
+        height="75"
+      />
+
+      <div class="footer2">
+        <img
+          class="footer"
+          src="IMAGENES RETO1/AyuntamientoMuskiz.jpg"
+          alt="imagen no encontrada"
+          title="Logo Biblioteca Muskiz"
+          height="75"
+        />
+        <span>Ayuntamiento de Muskiz</span>
+      </div>
+
+      <div class="derechos">
+        <pre class="Copyright">
+     Copyright © Biblioteca de Muskiz    
+                  AISBL
+           All Rights Reserved
+    </pre
+        >
+      </div>
+
+      <pre class="contacto">
+    Contacto: <br>
+    <img src="IMAGENES RETO1/e-mail.png" alt="" width="15px" height="15px"> <a href="mailto:Bibliotecamuskiz@hhotmail.com">Bibliotecamuskiz@hhotmail.com</a>
+    <img src="IMAGENES RETO1/telefono.png" alt="" width="15px" height="15px"> 94 252 44 85
+    <img class="Wassap" src="IMAGENES RETO1/Wassap.jpg" alt="" width="15px" height="15px"> 632 36 89 41
+    </pre>
+    </footer>
+  </body>
+</html>

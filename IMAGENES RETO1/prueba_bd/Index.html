@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIBLIOTECA MUSKIZ</title>
+    <link rel="stylesheet" href="Index.css" type="text/css" media="all">
+    <link rel="icon" href="IMAGENES RETO1/favicon.PNG">
+   
+</head>
+<body>
+    <!-- Cabecera de la web válida para todas las páginas de la bibioteca-->
+  <header>
+      <img class="cabecera" src="IMAGENES RETO1/LogoBiblioteca.PNG" alt="imagen no encontrada" title="Logo Biblioteca Muskiz"  height="80">
+      <h1>BIBLIOTECA DE MUSKIZ</h1>
+      <pre>  HORARIO (LUNES-VIERNES): <br>   Mañanas 10:00 - 13:00 <br>   Tardes 16:00 - 19:45</pre>
+     <!-- form para realizar la busqueda dentro de la web -->
+    <form class="search-box">
+      <input class="text" placeholder="Busca por autor, título, género..."><button type="submit"><img class="img" src="IMAGENES RETO1/lupa.jpg" alt="Buscador"></button>
+    </form>
+    <!-- distintos botones para ir al index, a la ubicacion de la biblioteca y para registrarse -->
+    <button class="Home">
+      <a href="Index.html" target="_blank" title="Home"><img src="IMAGENES RETO1/casita.png" alt="" width="35"></a>
+    </button>
+    <button class="Home">
+      <a href="Ubicacion.html" target="_blank" title="Ubicacion"><img src="IMAGENES RETO1/Ubicacion.png" alt="" width="35"></a>
+    </button>
+    <button class="login">
+      <a href="Login.html" target="_blank" title="login"><img src="IMAGENES RETO1/LOGIN.png" alt="" width="35"></a>
+    </button>
+  </header>
+  <!-- cuerpo de la página con cuatro apartados diferenciados, autor, categoria, publicaciones y libros varios -->
+  <br>
+  <!-- Caja contenedora de 3 div autor,categoria y publicaciones -->
+  <div class="contenedor">
+    <!-- div autor con menu con los distintos autores y en los desplegables sus correspondientes libros  -->
+    <div class="autor">
+      <h1 class="celeste"><u>Autor:</u></h1>
+      <details name="filtro">
+        <summary>Arturo Peréz Reverte</summary>
+        <p>La isla de la muyer dormina</p>
+        <p>El problema final</p>
+        <p>Revolución</p>
+        <p>El italiano</p>
+        <p>Una historia de España</p>
+      </details>
+      <details name="filtro">
+        <summary>Brandom Sanderson</summary>
+        <p>El camino de los reyes</p>
+        <p>Palabras radiantes</p>
+        <p>Juramentada</p>
+        <p>Esquirla del amanecer</p>
+        <p>El ritmo de la guerra</p>
+      </details>
+      <details name="filtro">
+        <summary>Gigi Vines</summary>
+        <p>Love unfiltered</p>
+      </details>
+      <details name="filtro">
+        <summary>Andrés Trapiello</summary>
+        <p>Me piden que regrese</p>
+      </details>
+      <details name="filtro">
+        <summary>Carmen Posadas</summary>
+        <p>El misterioso caso del impostor del titanec</p>
+      </details>
+      <details name="filtro">
+        <summary>Antonio Soler</summary>
+        <p>El día del lobo</p>
+      </details>
+      <details name="filtro">
+        <summary>James Clear</summary>
+        <p>Nuevo estuche hábitos atómicos</p>
+      </details>
+      <details name="filtro">
+        <summary>Natalia Seijo</summary>
+        <p>El cuerpo tiene memoria</p>
+      </details>
+      <details name="filtro">
+        <summary>Sergio Belgueria</summary>
+        <p>Tengo un plan: lo que ellos saben y tú no</p>
+      </details>
+      <details name="filtro">
+        <summary>Lorena Macías</summary>
+        <p>Cien años de mendigram</p>
+      </details>
+      <details name="filtro">
+        <summary>María del Mondo</summary>
+        <p>La opinión de los demás esta de más</p>
+      </details>
+      <br>
+    </div>
+    <!-- div categoria con menu con las distintas categorias de los libros y en el desplegable los correspondientes libros -->
+    <div class="categoria">
+      <h1 class="celeste"><u>Categorías:</u></h1>
+      <details name="filtro">
+        <summary>Narrativa Fantástica</summary>
+        <p>El camino de los reyes</p>
+        <p>Palabras radiantes</p>
+        <p>Juaramentada</p>
+        <p>Esquirla del amanecer</p>
+        <p>El ritmo de la guerra</p>        
+      </details>        
+      <details name="filtro">
+        <summary>Contemporánea</summary>
+        <p>La isla de la mujer dormida</p>
+        <p>Love unfiltered</p>
+        <p>Me piden que regrese</p>
+        <p>El misterioso caso del importor del titanic</p>
+        <p>El día del lobo</p>
+      </details>
+      <details name="filtro">
+        <summary>Autoayuda y espiritualidad</summary>
+        <p>Nuevo estuche hábitos atómicos</p>
+        <p>El cuerpo tiene memoria</p>
+        <p>Tengo un plan: lo que ellos deben saber y tú no</p>
+        <p>Cien años de mendrigram</p>
+        <p>La opinión de los demás esta de más</p>
+      </details>
+      <br>
+    </div>
+    <!-- div para publicaciones de la biblioteca, como info para los visitantes de la web -->
+    <div class="texto">
+      <div>
+        <img src="IMAGENES RETO1/imagenes_index/contemporanea/me piden que regrese.jpg" alt="imagen no encontrada" width="150" title="Me piden que regrese">
+      </div>
+      <div>
+        <p class="best">Si te gusta estar al tanto de los últimos best sellers y la actualidad literaria o si quieres regalar un libro e ir a lo seguro, lo que necesitas es conocer cuáles son <b>los libros más vendidos</b>. Encuentra en la biblioteca de Muskiz <b>los libros más populares</b>, esos de los que todo el mundo está hablando, <b>los libros más recomendados entre lectores, los más valorados por la crítica</b>, premiados con diferentes galardones y los best sellers internacionales.  Podrás encontrar tanto <span class="rojo">lo más vendido esta última semana </span>como <span class="rojo">lo más vendido a lo largo del 2024</span></p>
+      </div>      
+    </div>
+  </div>
+  <br>  
+  <!-- div con 5 muestras de libros con su imagen, titulo, autor y hipervínculo a la página del libro para ampliar info, de momento no esta linkeada (por falta de tiempo), se ha dejado muestra de una dirección a un html de un posible libro, habría que cambiarlos todos a los correctos y hacer la plantilla de los libros -->
+  <div class="contenedor">   
+    <div class="prefooter">
+      
+      <div>
+        <img class="tamaño"src="IMAGENES RETO1/imagenes_index/contemporanea/el dia del lobo.jpg" alt="img no encontrada" title="click para saber más">      
+        <p>EL DÍA DEL LOBO</b></p>
+        <p class="autordos">ANTONIO SOLER</p>
+        <P><a href="eldiadellobro.html" title="haremos página por cada libro con descripción del mismo" target="_blank">¡LO QUIERO!</a></P>      
+      </div>
+
+      <div>
+        <img class="tamaño"src="IMAGENES RETO1/imagenes_index/contemporanea/el misterioso caso del impostor del titanic.jpg" alt="img no encontrada" title="click para saber más">      
+        <p>EL MISTERIOSO CASO...</b></p>
+        <p class="autordos">CARMEN POSADAS</p>
+        <P><a href="eldiadellobro.html" title="haremos página por cada libro con descripción del mismo" target="_blank">¡LO QUIERO!</a></P>      
+      </div>
+
+      <div>
+        <img class="tamaño"src="IMAGENES RETO1/imagenes_index/contemporanea/la isla de la mujer dormida.jpg" alt="img no encontrada" title="click para saber más">      
+        <p>LA ISLA DE LA MUJER DORMIDA</b></p>
+        <p class="autordos">ARTURO PEREZ REVERTE</p>
+        <P><a href="eldiadellobro.html" title="haremos página por cada libro con descripción del mismo" target="_blank">¡LO QUIERO!</a></P>      
+      </div>
+
+      <div>
+        <img class="tamaño"src="IMAGENES RETO1/imagenes_index/contemporanea/love infultered.jpg" alt="img no encontrada" title="click para saber más">      
+        <p>LOVE INFULTERED</b></p>
+        <p class="autordos">GIGI VINES</p>
+        <P><a href="eldiadellobro.html" title="haremos página por cada libro con descripción del mismo" target="_blank">¡LO QUIERO!</a></P>      
+      </div>
+
+      <div>
+        <img class="tamaño"src="IMAGENES RETO1/imagenes_index/contemporanea/me piden que regrese.jpg" alt="img no encontrada" title="click para saber más">      
+        <p>ME PIDEN QUE REGRESE</b></p>
+        <p class="autordos">ANDRÉS TRIPIELLO</p>
+        <P><a href="eldiadellobro.html" title="haremos página por cada libro con descripción del mismo" target="_blank">¡LO QUIERO!</a></P>      
+      </div>
+    </div>
+  </div>
+  <!-- pie de página igual en toda la web, con imagenes, copyright y datos de contacto-->
+  <footer>
+    <img class="footer" src="IMAGENES RETO1/Logotipo_del_Gobierno_de_España-01.png" alt="imagen no encontrada" title="Logo Biblioteca Muskiz" height="75">
+    
+    <img class="footer" src="IMAGENES RETO1/AyuntamientoMuskiz.jpg" alt="imagen no encontrada" title="Logo Biblioteca Muskiz" height="75">
+    <span>Ayuntamiento de Muskiz</span><br>
+
+
+    <pre class="Copyright">
+        Copyright © Biblioteca de Muskiz
+                     AISBL
+              All Rights Reserved
+    </pre>
+    
+    <pre class="contacto">
+    Contacto: <br>
+    <img src="IMAGENES RETO1/e-mail.png" alt="" width="15px" height="15px"> Bibliotecamuskiz@hhotmail.com
+    <img src="IMAGENES RETO1/telefono.png" alt="" width="15px" height="15px"> 94 252 44 85
+    <img class="Wassap" src="IMAGENES RETO1/Wassap.jpg" alt="" width="15px" height="15px"> 632 36 89 41
+    </pre>
+</footer>
+
+  </body>
+</html>

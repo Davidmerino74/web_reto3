@@ -1,0 +1,95 @@
+body{
+    background-color:beige;
+}
+header{
+    background-color: rgb(119, 232, 209);
+    border: 1px solid black;
+    border-radius: 0.5em;
+    display: flex;
+    align-items:center;
+    justify-content:space-around
+
+}
+
+.cabecera{
+padding: 1em
+}
+footer{
+    position: relative;    
+    margin-top: 2em;
+    background-color: rgb(196, 188, 188);
+    border: 1px solid black;
+    border-radius: 0.5em;
+    display: flex;
+    align-items: center;
+    
+    
+}
+.footer{
+padding-left: 2em;
+padding-right: 1em;
+}
+.Home{
+    background-color: rgb(119, 232, 209);
+    border:none;
+}
+
+.login{
+    background-color: rgb(119, 232, 209);
+    border:none;
+}
+
+
+.search-box {
+    text-align:center;
+    align-items: center;
+}
+
+.inicio input{
+    width:400px;
+    font-size: 1em;
+}
+.final{
+    text-align: right;
+}
+.contacto{
+    margin-left: 17%;
+    margin-right: 5%;
+}
+
+.img {
+    width: 10px;
+    background-color: rgb(119, 232, 209);
+    border:none;
+
+}
+
+.Wassap{
+    border-radius: 10px;
+}
+
+.text{
+    width: 250px;
+}
+
+.Copyright{
+    margin-left: 5.5%;
+}
+
+
+
+
+.GoogleMaps{
+    margin: 0 auto;
+    display: block; 
+    border: 3px solid #019cba;
+    width: 90%; 
+    height: 300px;
+    border-radius: 0.5em;
+}
+
+.ImgBiblioteca{
+    padding-left: 20em;
+    padding-right: 13em;
+    }
+

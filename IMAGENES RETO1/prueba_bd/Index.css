@@ -1,0 +1,139 @@
+/* mismo estito para toda la web, body, header y footer*/
+body {
+  background-color: beige;
+}
+
+header {
+  background-color: rgb(119, 232, 209);
+  border: 1px solid black;
+  border-radius: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cabecera {
+  padding: 1em;
+}
+footer {
+  position: relative;
+  margin-top: 2em;
+  background-color: rgb(196, 188, 188);
+  border: 1px solid black;
+  border-radius: 0.5em;
+  display: flex;
+  align-items: center;
+}
+.footer {
+  padding-left: 2em;
+  padding-right: 1em;
+}
+.Home {
+  background-color: rgb(119, 232, 209);
+  border: none;
+}
+
+.login {
+  background-color: rgb(119, 232, 209);
+  border: none;
+}
+
+.search-box {
+  text-align: center;
+  align-items: center;
+}
+
+.inicio input {
+  width: 400px;
+  font-size: 1em;
+}
+.final {
+  text-align: right;
+}
+.contacto {
+  margin-left: 17%;
+  margin-right: 5%;
+}
+
+.img {
+  width: 10px;
+  background-color: rgb(119, 232, 209);
+  border: none;
+}
+
+.Wassap {
+  border-radius: 10px;
+}
+
+.text {
+  width: 250px;
+}
+
+.Copyright {
+  margin-left: 5.5%;
+}
+
+/* estilo del index.html*/
+
+div.contenedor {
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+div.categoria {
+  width: 20%;
+  border: 4px solid rgb(165, 182, 182);
+  border-radius: 10px;
+  padding-left: 2em;
+}
+
+div.autor {
+  border: 4px solid rgb(165, 182, 182);
+  width: 20%;
+  border-radius: 10px;
+  padding-left: 2em;
+}
+div.texto {
+  border: 4px solid rgb(165, 182, 182);
+  width: 40%;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  text-indent: 2em;
+}
+div img {
+  margin-top: 1em;
+  margin-right: 2em;
+}
+.best {
+  margin-right: 2em;
+  text-align: justify;
+  font-size: 1.3em;
+}
+.rojo {
+  color: red;
+  font-weight: bolder;
+}
+.celeste {
+  background-color: rgb(165, 182, 182);
+  margin-right: 1em;
+  border-radius: 5px;
+  text-align: center;
+}
+.tamaño {
+  width: 160px;
+  height: 210px;
+}
+.autordos {
+  color: rgb(110, 113, 113);
+}
+div.prefooter {
+  border: 4px solid rgb(165, 182, 182);
+  width: 90%;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-around;
+}

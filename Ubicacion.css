@@ -1,0 +1,354 @@
+body{
+    background-color:beige;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: rgb(119, 232, 209);
+    border: 1px solid black;
+    border-radius: 0.5em;
+    display: flex;
+    align-items:center;
+    justify-content:space-around
+
+}
+
+.cabecera{
+padding: 1em
+}
+footer{
+    position: relative;    
+    margin-top: 2em;
+    background-color: rgb(196, 188, 188);
+    border: 1px solid black;
+    border-radius: 0.5em;
+    display: flex;
+    align-items: center;
+    
+    
+}
+.footer{
+padding-left: 2em;
+padding-right: 1em;
+}
+.Home{
+    background-color: rgb(119, 232, 209);
+    border:none;
+}
+
+.login{
+    background-color: rgb(119, 232, 209);
+    border:none;
+}
+
+
+.search-box {
+    text-align:center;
+    align-items: center;
+}
+
+.inicio input{
+    width:400px;
+    font-size: 1em;
+}
+.final{
+    text-align: right;
+}
+.contacto{
+    margin-left: 17%;
+    margin-right: 5%;
+}
+
+.img {
+    width: 10px;
+    background-color: rgb(119, 232, 209);
+    border:none;
+
+}
+
+.Wassap{
+    border-radius: 10px;
+}
+
+.text{
+    width: 250px;
+}
+
+.Copyright{
+    margin-left: 5.5%;
+}
+
+
+/*******************************************************************************************************************/
+/*******************************************************************************************************************/
+/*******************************************************************************************************************/
+/*******************************************************************************************************************/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.ImgBiblioteca img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.tablaDiscapacitados img {
+    width: 30px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    table {
+    display: block;
+    overflow-x: auto;
+    }
+
+    .ImgBiblioteca {
+    text-align: center;
+    }
+
+    .tablaDiscapacitados table {
+    font-size: 14px;
+    }
+
+    .tablaDiscapacitados td {
+    padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tablaDiscapacitados table {
+    font-size: 12px;
+    }
+
+    .tablaDiscapacitados td {
+    padding: 5px;
+    }
+}
+
+
+.mapa-container {
+    width: 100%;
+    max-width: 800px; 
+    margin: 20px auto; 
+    text-align: center; 
+}
+
+
+.mapa-container iframe {
+    width: 100%;
+    height: 400px; 
+    border: 0;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+@media (max-width: 768px) {
+    .mapa-container iframe {
+        height: 300px; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .mapa-container iframe {
+        height: 200px; 
+    }
+}
+
+body {
+    background-color: beige;
+  }
+  
+  header {
+    width: auto;
+    background-color: rgb(119, 232, 209);
+    border: 1px solid black;
+    border-radius: 0.5em;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 2fr 0.5fr 0.5fr 0.5fr;
+    grid-template-areas: "logo  titulo horario busqueda home  homeubi  login";
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .cabecera {  
+    grid-area: logo;  
+  }
+  .titulo {
+    grid-area: titulo;
+  }
+  .horario {
+    grid-area: horario;
+  }
+  .search-box {
+    grid-area: busqueda;
+    text-align: center;
+    align-items: center;
+  }
+  .Home {
+    grid-area: home;
+  }
+  .HomeUbi {
+    grid-area: homeubi;
+  }
+  .Home,
+  .HomeUbi {
+    background-color: rgb(119, 232, 209);
+    border: none;
+    transition: 0.3s ease;
+  }
+  .login {
+    grid-area: login;
+    background-color: rgb(119, 232, 209);
+    border: none;
+    justify-self: center;
+    transition: 0.3s ease;
+  }  
+  
+  footer {
+    position: relative;
+    margin-top: 2em;
+    background-color: rgb(196, 188, 188);
+    border: 1px solid black;
+    border-radius: 0.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1.5fr;
+    grid-template-areas: "footer footer2 derechos contacto";
+    align-items: center;
+    justify-items: center;
+  }
+  .footer{
+    
+    grid-area: footer;
+  }
+  .footer2{
+    padding-top: 2%;
+    grid-area: footer2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer2 img{
+    margin: 0 auto;
+  }
+  
+  .derechos{
+    grid-area: derechos;
+  }
+  .contacto {
+    grid-area: contacto;
+    
+  }
+  
+  .img {
+    width: 10px;
+    background-color: rgb(119, 232, 209);
+    border: none;
+  }
+  
+  .Wassap {
+    border-radius: 10px;
+  }
+  .text {
+    width: 250px;
+    transition: width 0.3s ease;
+  }
+  /*********TRANSICIONES**********/
+  
+  /*Del header*/
+  
+  .Home img:hover,
+  .HomeUbi img:hover,
+  .login img:hover{
+    width: 50%;  
+    animation: rotar 1s ease infinite;
+  }
+  
+  @keyframes rotar {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(30deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(-30deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .text:focus{
+    width: 300px;    
+  }
+  .horario:hover{
+    font-size: 1.5em;
+    color: blue;
+    font-weight: bolder;
+  }
+  .titulo:hover{
+    text-decoration: underline;
+    text-shadow: 2px 2px white;
+  }
+  .cabecera {
+    transition: transform 0.5s ease;
+  }
+  .cabecera:hover {
+    transform: rotate(360deg);
+  }
+  
+  /* Del footer*/
+  .contacto:hover{
+    font-size: 1.5em;
+    color: blue;
+  }
+
+  
+  /*******responsive*******/
+  
+  @media screen and (max-width:980px){
+    header {      
+      display: grid;    
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto 40px 40px;
+      grid-template-areas: 
+      "logo  titulo horario"
+      "home  homeubi  login"
+      "busqueda busqueda busqueda";   
+    }
+    
+    footer {    
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      grid-template-areas: 
+        "footer footer2 "
+        "derechos contacto";
+      align-items: center;
+      justify-items: center;
+    }  
+    .Home img:hover,
+    .HomeUbi img:hover,
+    .login img:hover{
+     width: 20%;
+     transition: 0.3s ease;
+  }
+  }

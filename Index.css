@@ -1,0 +1,415 @@
+/* mismo estito para toda la web, body, header y footer*/
+body {
+  background-color: beige;
+}
+
+header {
+  width: auto;
+  background-color: rgb(119, 232, 209);
+  border: 1px solid black;
+  border-radius: 0.5em;
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 2fr 0.5fr 0.5fr 0.5fr;
+  grid-template-areas: "logo  titulo horario busqueda home  homeubi  login";
+  align-items: center;
+  justify-items: center;
+}
+
+.cabecera {
+  grid-area: logo;
+}
+.titulo {
+  grid-area: titulo;
+}
+.horario {
+  grid-area: horario;
+}
+.search-box {
+  grid-area: busqueda;
+  text-align: center;
+  align-items: center;
+}
+.Home {
+  grid-area: home;
+}
+.HomeUbi {
+  grid-area: homeubi;
+}
+.Home,
+.HomeUbi {
+  background-color: rgb(119, 232, 209);
+  border: none;
+  transition: 0.3s ease;
+}
+.login {
+  grid-area: login;
+  background-color: rgb(119, 232, 209);
+  border: none;
+  justify-self: center;
+  transition: 0.3s ease;
+}
+
+footer {
+  position: relative;
+  margin-top: 2em;
+  background-color: rgb(196, 188, 188);
+  border: 1px solid black;
+  border-radius: 0.5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1.5fr;
+  grid-template-areas: "footer footer2 derechos contacto";
+  align-items: center;
+  justify-items: center;
+}
+.footer {
+  grid-area: footer;
+}
+.footer2 {
+  padding-top: 2%;
+  grid-area: footer2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.footer2 img {
+  margin: 0 auto;
+}
+
+.derechos {
+  grid-area: derechos;
+}
+.contacto {
+  grid-area: contacto;
+}
+
+.img {
+  width: 10px;
+  background-color: rgb(119, 232, 209);
+  border: none;
+}
+
+.Wassap {
+  border-radius: 10px;
+}
+.text {
+  width: 250px;
+  transition: width 0.3s ease;
+}
+/*********TRANSICIONES**********/
+
+/*Del header*/
+
+.Home img:hover,
+.HomeUbi img:hover,
+.login img:hover {
+  width: 50%;
+  animation: rotar 1s ease infinite;
+}
+
+@keyframes rotar {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.text:focus {
+  width: 300px;
+}
+.horario:hover {
+  font-size: 1.5em;
+  color: blue;
+  font-weight: bolder;
+}
+.titulo:hover {
+  text-decoration: underline;
+  text-shadow: 2px 2px white;
+}
+.cabecera {
+  transition: transform 0.5s ease;
+}
+.cabecera:hover {
+  transform: rotate(360deg);
+}
+
+/* Del footer*/
+.contacto:hover {
+  font-size: 1.5em;
+  color: blue;
+}
+
+/*******responsive*******/
+
+@media screen and (max-width: 980px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 40px 40px;
+    grid-template-areas:
+      "logo  titulo horario"
+      "home  homeubi  login"
+      "busqueda busqueda busqueda";
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-areas:
+      "footer footer2 "
+      "derechos contacto";
+    align-items: center;
+    justify-items: center;
+  }
+  .Home img:hover,
+  .HomeUbi img:hover,
+  .login img:hover {
+    width: 20%;
+    transition: 0.3s ease;
+  }
+}
+
+/* estilo del index.html*/
+
+div.contenedor1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.2fr;
+  grid-auto-rows: auto auto;
+  grid-template-areas: "autor categoria texto";
+  gap: 2% 2%;
+}
+div.autor {
+  grid-area: autor;
+  border: 4px solid rgb(165, 182, 182);
+  border-radius: 10px;
+  padding-left: 2em;
+}
+div.categoria {
+  grid-area: categoria;
+  border: 4px solid rgb(165, 182, 182);
+  border-radius: 10px;
+  padding-left: 2em;
+}
+div.texto {
+  grid-area: texto;
+  border: 4px solid rgb(165, 182, 182);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  text-indent: 2em;
+}
+div.texto img {
+  max-width: 150px;
+  height: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+div.contenedor {
+  display: flex;
+  justify-content: space-around;
+}
+div img {
+  margin-top: 1em;
+  margin-right: 2em;
+  max-width: 150px;
+}
+.best {
+  margin-right: 2em;
+  text-align: justify;
+  font-size: 1.3em;
+}
+.rojo {
+  color: red;
+  font-weight: bolder;
+  transition: 1s;
+}
+.celeste {
+  background-color: rgb(165, 182, 182);
+  margin-right: 1em;
+  border-radius: 5px;
+  text-align: center;
+  transition: 1s;
+}
+
+.tamaño {
+  width: 160px;
+  height: 210px;
+}
+.autordos {
+  color: rgb(110, 113, 113);
+}
+div.prefooter {
+  border: 4px solid rgb(165, 182, 182);
+  width: 90%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 980px) {
+  div.contenedor1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto auto;
+    grid-template-areas:
+      "autor categoria"
+      "texto texto";
+    gap: 2% 2%;
+  }
+  div.prefooter {
+    width: 100%;
+  }
+}
+
+.autor:hover,
+.categoria:hover,
+.texto:hover,
+.prefooter:hover {
+  border: 4px solid blue;
+}
+.autor:hover .celeste,
+.categoria:hover .celeste {
+  box-shadow: -10px -10px rgb(88, 88, 239);
+  letter-spacing: 4px;
+}
+details p {
+  transition: 0.5s;
+}
+details p:hover {
+  width: 92%;
+  background-color: rgb(148, 226, 226);
+  letter-spacing: 2px;
+  box-shadow: -7px -5px rgb(88, 88, 239);
+}
+.best b {
+  transition: 2s;
+}
+.texto:hover {
+  .rojo {
+    color: blue;
+  }
+  b {
+    color: red;
+  }
+}
+
+.xml{
+  background-color: rgb(148, 226, 226);
+  color: black;    
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 
+  background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 50%;
+  margin-top: 2rem;
+
+  
+}
+.xml:hover {
+  background-color: #33acff; 
+  transform: scale(1.05);
+}
+
+.xml:active {
+  background-color: #33acff;
+  transform: scale(0.98);
+}
+
+/*rss*/
+/* Contenedor principal de los artículos RSS */
+#blog-feed {
+  width: 90%;
+  padding: 1em;
+  background-color: rgb(245, 245, 245);
+  border: 4px solid rgb(165, 182, 182);
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1em;
+}
+
+/* Cada artículo */
+.rss-item {
+  width: 20%; /* Ancho inicial */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1em;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover para los artículos (efecto visual) */
+.rss-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Artículo expandido */
+.rss-item.expandido {
+  width: 90%; /* Expande al 90% del ancho del contenedor */
+  flex-grow: 1; /* Permite que el artículo tome más espacio */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Título del artículo */
+.rss-item h2 {
+  font-size: 1.2em;
+  color: hotpink;
+}
+
+/* Imagen del artículo */
+.rss-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Descripción recortada */
+.descripcion-recortada {
+  text-align: left; /* Alinea la descripción recortada a la izquierda */
+  color: #333;
+  font-size: 0.9em;
+  line-height: 1.5em; /* Mejora la legibilidad */
+}
+
+/* Descripción completa */
+.descripcion-completa {
+  text-align: left; /* Alinea la descripción completa a la izquierda */
+  color: #555;
+  font-size: 0.9em;
+  line-height: 1.6em; /* Mejor espacio entre líneas */
+  display: none; /* Ocultada inicialmente */
+}
+
+/* Párrafos dentro de las descripciones */
+.descripcion-completa p,
+.descripcion-recortada p {
+  margin: 0.5em 0; /* Espaciado entre párrafos */
+}
+
+/* Ajustes adicionales para mejorar visualización */
+.rss-item p {
+  margin: 0; /* Elimina márgenes externos en general */
+  padding: 0;
+}
