@@ -333,6 +333,60 @@ details p:hover {
   transform: scale(0.98);
 }
 
+
+/*     */
+
+/* Estilo del formulario */
+.form {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px; /* Aumentamos el max-width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilo de la etiqueta con la clase xmlImportar */
+.xmlImportar {
+  font-size: 18px; /* Aumentamos el tamaño de la fuente */
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center; /* Centrado del texto */
+}
+
+/* Estilo del input y botón */
+.input, .button {
+  width: 100%;
+  background-color: rgb(148, 226, 226);
+  color: black;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px; /* Espacio entre los campos */
+}
+
+/* Hover y efecto activo para los elementos de la clase .input y .button */
+.input:hover, .button:hover {
+  background-color: #33acff;
+  transform: scale(1.05);
+}
+
+.input:active, .button:active {
+  background-color: #33acff;
+  transform: scale(0.98);
+}
+
+
+
 /*rss*/
 /* Contenedor principal de los artículos RSS */
 #blog-feed {
