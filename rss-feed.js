@@ -45,7 +45,6 @@ function mostrarFeed(items) {
         enlace.href = item.link;
         enlace.textContent = 'Leer más';
         enlace.rel = 'noopener noreferrer';
-        enlace.target = '_blank';
 
         // Imagen del artículo
         const imagen = document.createElement('img');

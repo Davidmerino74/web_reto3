@@ -182,11 +182,11 @@
   <br><br>
 
   <center>
-    <div class="form-container">
-      <form action="importarXml-BASE.php" method="post" enctype="multipart/form-data" class="form">
-          <label for="archivo" class="xmlImportar">Selecciona un archivo XML:</label><br>
-          <input type="file" name="archivo" id="archivo" class="input" required><br><br>
-          <button type="submit" class="button">Importar XML a la Base de Datos</button>
+     <div class="">
+      <form action="xmlReto/insertar.php" method="post" enctype="multipart/form-data" class="form">
+        <label for="archivo" class="xmlImportar">Selecciona un archivo XML:</label>
+        <input type="file" name="archivo" id="archivo" class="input" accept=".xml" required>
+        <button type="submit" class="button">Importar XML a la Base de Datos</button>
       </form>
     </div>
   </center>
