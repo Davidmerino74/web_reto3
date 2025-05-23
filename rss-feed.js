@@ -44,7 +44,7 @@ function mostrarFeed(items) {
         const enlace = document.createElement('a');
         enlace.href = item.link;
         enlace.textContent = 'Leer más';
-        enlace.rel = 'noopener noreferrer';//mejora la seguridad evitando que el sitio destino acceda al window.opener
+        enlace.rel = 'noopener noreferrer';
         enlace.target = '_blank';
 
         // Imagen del artículo
