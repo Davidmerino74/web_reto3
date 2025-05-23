@@ -28,13 +28,13 @@ function procesarDescripcion(texto) {
 // Función para mostrar el feed en el contenedor
 function mostrarFeed(items) {
     const maxArticulos = 4; // Mostrar solo 4 artículos
-    const contenedor = document.getElementById('blog-feed');
+    const contenedor = document.getElementById('blog-feed');//ob tiene el div del index.html
     
     items.slice(0, maxArticulos).forEach((item, index) => {
         // Crear el contenedor de cada artículo
         const contenedorArticulo = document.createElement('div');
-        contenedorArticulo.classList.add('rss-item');
-        contenedorArticulo.dataset.index = index;
+        contenedorArticulo.classList.add('rss-item');//añadimos la clase css al contenedor para aplicar estilos
+        contenedorArticulo.dataset.index = index;//guardamos el indice del artículo , útil para identificar cada bloque
 
         // Título del artículo
         const titulo = document.createElement('h2');
@@ -44,19 +44,19 @@ function mostrarFeed(items) {
         const enlace = document.createElement('a');
         enlace.href = item.link;
         enlace.textContent = 'Leer más';
-        enlace.rel = 'noopener noreferrer';
+        enlace.rel = 'noopener noreferrer';//mejora la seguridad evitando que el sitio destino acceda al window.opener
         enlace.target = '_blank';
 
         // Imagen del artículo
         const imagen = document.createElement('img');
         const mediaContentUrl = item.media?.content?.url || item.enclosure?.link || 'IMAGENES RETO1/default.jpg';
         imagen.src = mediaContentUrl; // Usar URL de media:content o imagen por defecto
-        imagen.alt = item.title;
+        imagen.alt = item.title;//define el texto alternativo con el titulo del artículo
 
         // Descripción recortada (procesada para incluir formato de párrafos)
         const descripcion = document.createElement('div');
         descripcion.classList.add('descripcion-recortada');
-        descripcion.innerHTML = procesarDescripcion(item.description.substring(0, 150)) + '<p>...</p>';
+        descripcion.innerHTML = procesarDescripcion(item.description.substring(0, 150)) + '<p>...</p>';//solo mostramos los primeros 150 carácteres(modificable)
 
         // Descripción completa (procesada para incluir formato de párrafos)
         const descripcionCompleta = document.createElement('div');
